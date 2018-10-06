@@ -12,5 +12,4 @@ def index():
 
 #bottle.run(host='0.0.0.0', port=argv[1])
 
-if __name__ == "__main__":
-    run(debug = True)
+run(debug = True)
