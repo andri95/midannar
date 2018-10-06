@@ -1,6 +1,8 @@
 from bottle import *
 import urllib.request, json
 
+bottle.debug(True)
+
 with urllib.request.urlopen("https://apis/petrol") as url:
     data = json.loads(url.read().decode())
 
