@@ -6,7 +6,7 @@ with urllib.request.urlopen("https://apis/petrol") as url:
 
 @route('/')
 def index():
-    return template('index', data = data)
+    return template('index.tpl', data = data)
 
 bottle.debug(True)
 
