@@ -8,6 +8,9 @@ with urllib.request.urlopen("https://apis/petrol") as url:
 def index():
     return template('index.tpl', data = data)
 
-bottle.debug(True)
+#bottle.debug(True)
 
-bottle.run(host='0.0.0.0', port=argv[1])
+#bottle.run(host='0.0.0.0', port=argv[1])
+
+if __name__ == "__main__":
+    run(debug = True)
