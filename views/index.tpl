@@ -1,7 +1,14 @@
-<h1>BENZIN<h1>
-<div>
-% for x in data['results']:
-    <h3>{{x['company']}}<h3>
-
-% end
+<h1>BENZIN</h1>
+<div class = "linkar">
+    % listi = []
+    % for x in data['results']:
+        % for i in x:
+            % if x['company'] not in listi:
+                % listi.append(x['company'])
+    % end
+    <ul>
+        % for x in listi:
+            <li><a href="/listi[x]> {{listi[x]}} </a></li>
+        % end
+    </ul>
 </div>
