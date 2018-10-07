@@ -10,8 +10,7 @@ with urllib.request.urlopen("https://apis.is/petrol") as url:
 def index():
     return template('index.tpl', data = data)
 
-@route('listi[x]')
-def index
+
 
 #bottle.run(host='0.0.0.0', port=argv[1])
 
