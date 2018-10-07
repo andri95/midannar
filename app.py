@@ -1,7 +1,7 @@
 from bottle import *
 import urllib.request, json
 
-#bottle.debug(True)
+bottle.debug(True)
 
 with urllib.request.urlopen("https://apis.is/petrol") as url:
     data = json.loads(url.read().decode())
@@ -26,7 +26,7 @@ def send_image(filename):
 def villa(error):
     return '<h2>Ekkert að frétta hérna, reyndu aftur</h2>'
 
-#bottle.run(host='0.0.0.0', port=argv[1])
+bottle.run(host='0.0.0.0', port=argv[1])
 
 
-run(host='localhost', port=8080)
+#run(host='localhost', port=8080)
