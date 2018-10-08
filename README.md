@@ -1,1 +1,1 @@
-# allt virkar fínt á localhost en ég fæ þetta ekki til að virka á heroku eftir margar tilraunir.
+# Var allt komið í toppstand á localhost. Byrjaði svo að reyna að koma þessu inn á heroku og bætti við bottle.run(host='0.0.0.0', port=argv[1]) og bottle.debug(True) ofl. en ég fæ þetta ekki til að virka. Mig vantar örugglega eitthvað til að fá þetta til að virka á heroku.
