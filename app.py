@@ -1,4 +1,8 @@
 from bottle import *
+import os
+from os import environ as env
+from sys import argv
+
 import urllib.request, json
 
 bottle.debug(True)
